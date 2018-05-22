@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="www.amandafarrell.com.twoplayerfarkle.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Player Container-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp">
+
+            <!--Player 1-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/player1"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/score1"
+                    style="@style/ScoreTextTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_margin="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/one"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/one"
+                            android:onClick="scoreOne"/>
+
+                        <Button
+                            android:id="@+id/five"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/five"
+                            android:onClick="scoreFive"/>
+
+                        <Button
+                            android:id="@+id/triple_ones"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/triple_ones"
+                            android:onClick="tripleOne"/>
+
+                        <Button
+                            android:id="@+id/triple_threes"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/triple_threes"
+                            android:onClick="tripleThree"/>
+
+                        <Button
+                            android:id="@+id/triple_fives"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/triple_fives"
+                            android:onClick="tripleFive"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/triple_pairs"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/triple_pairs"
+                            android:onClick="triplePair"/>
+
+                        <Button
+                            android:id="@+id/straight"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/straight"
+                            android:onClick="straight"/>
+
+                        <Button
+                            android:id="@+id/triple_twos"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/triple_twos"
+                            android:onClick="tripleTwo"/>
+
+                        <Button
+                            android:id="@+id/triple_fours"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/triple_fours"
+                            android:onClick="tripleFour"/>
+
+
+                        <Button
+                            android:id="@+id/triple_sixes"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/triple_sixes"
+                            android:onClick="tripleSix"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@android:color/darker_gray" />
+
+            <!--Player 2-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/player2"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/score2"
+                    style="@style/ScoreTextTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_margin="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/oneB"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/one"
+                            android:onClick="scoreOneB" />
+
+                        <Button
+                            android:id="@+id/fiveB"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/five"
+                            android:onClick="scoreFiveB"/>
+
+                        <Button
+                            android:id="@+id/triple_onesB"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/triple_ones"
+                            android:onClick="tripleOneB"/>
+
+                        <Button
+                            android:id="@+id/triple_threesB"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/triple_threes"
+                            android:onClick="tripleThreeB"/>
+
+                        <Button
+                            android:id="@+id/triple_fivesB"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/triple_fives"
+                            android:onClick="tripleFiveB"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/triple_pairsB"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/triple_pairs"
+                            android:onClick="triplePairB"/>
+
+                        <Button
+                            android:id="@+id/straightB"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/straight"
+                            android:onClick="straightB"/>
+
+
+                        <Button
+                            android:id="@+id/triple_twosB"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/triple_twos"
+                            android:onClick="tripleTwoB"/>
+
+
+                        <Button
+                            android:id="@+id/triple_foursB"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/triple_fours"
+                            android:onClick="tripleFourB"/>
+
+
+                        <Button
+                            android:id="@+id/triple_sixesB"
+                            style="@style/ButtonTheme"
+                            android:layout_width="match_parent"
+                            android:text="@string/triple_sixes"
+                            android:onClick="tripleSixB"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        style="@style/ButtonTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"
+        android:text="@string/reset"
+        android:onClick="reset"/>
+
+</RelativeLayout>
