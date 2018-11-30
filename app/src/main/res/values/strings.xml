@@ -6,12 +6,12 @@
 
     <string name="one">1</string>
     <string name="five">5</string>
-    <string name="triple_ones">Three 1's</string>
-    <string name="triple_twos">Three 2's</string>
-    <string name="triple_threes">Three 3's</string>
-    <string name="triple_fours">Three 4's</string>
-    <string name="triple_fives">Three 5's</string>
-    <string name="triple_sixes">Three 6's</string>
+    <string name="triple_ones">Three 1\'s</string>
+    <string name="triple_twos">Three 2\'s</string>
+    <string name="triple_threes">Three 3\'s</string>
+    <string name="triple_fours">Three 4\'s</string>
+    <string name="triple_fives">Three 5\'s</string>
+    <string name="triple_sixes">Three 6\'s</string>
     <string name="straight">1-2-3-4-5-6</string>
     <string name="triple_pairs">3 Pairs</string>
 
